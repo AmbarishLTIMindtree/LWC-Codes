@@ -1,0 +1,8 @@
+<template>
+    <lightning-card>
+        <lightning-input label="Account Name" type="text" onchange={handleOnChangeName} value={accountName}></lightning-input>
+        <lightning-input label="Account Phone" type="text" onchange={handleOnChangePhone} value={accountPhone}></lightning-input>
+        <lightning-input label="Account Website" type="text" onchange={handleOnChangeWebsite} value={accountWebsite}></lightning-input>
+        <lightning-button variant="Brand" onclick={handleChange} label="Create Account"></lightning-button>
+    </lightning-card>
+</template>
