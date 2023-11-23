@@ -1,0 +1,5 @@
+<design:component>
+    <!-- 'name' attribute should be same as component attribute 'name' -->
+	<design:attribute name="heading" label="Page Heading"
+                      datasource="LTIMindtree Employee Registration Form,Mindtree Employee Registration Form"/>
+</design:component>

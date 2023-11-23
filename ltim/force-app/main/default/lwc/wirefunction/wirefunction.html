@@ -1,0 +1,12 @@
+<template>
+  <h1>Test Component</h1>
+  <lightning-input
+    type="text"
+    label="Account Name"
+    value={accountName}
+    onchange={handleOnChangeAccountName}
+  ></lightning-input>
+  <template for:each={actList} for:item="a">
+    <li key={a.id}>{a.Name}</li>
+  </template>
+</template>

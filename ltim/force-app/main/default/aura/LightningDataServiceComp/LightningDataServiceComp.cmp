@@ -1,0 +1,30 @@
+<aura:component >
+    
+    <!-- Using lightning:recordForm -->
+    <lightning:recordForm objectApiName="Account" layoutType="Full" columns="3" />
+    
+    <!-- Using lightning:recordViewForm -->
+    <lightning:recordViewForm recordId="0015h00001Vnrj8AAB" objectApiName="Account" >
+    	<div>
+            <lightning:outputField fieldName="Name" />
+            <lightning:outputField fieldName="Description" />
+        </div>
+    </lightning:recordViewForm>
+    
+    <!-- Using lightning:recordEditForm -->
+    <lightning:recordEditForm recordId="0015h00001VlFlBAAV" objectApiName="Account" >
+        <lightning:messages />
+        <lightning:outputfield fieldName="Id" />
+        <lightning:inputfield fieldName="Name" />
+        <lightning:inputfield fieldName="Description" />
+        <lightning:button type="submit" name="update" label="Update" />
+    </lightning:recordEditForm>
+    
+    <!-- Using force:recordData -->
+    <aura:attribute name="accRecord" type="Account" />
+    <force:recordData aura:id="recordLoader" recordId="0015h00001VlO7kAAF" fields="Name,Description,Phone,Industry" 
+                      targetFields="{!v.accRecord}" />
+    
+    Name : {!v.accRecord.Name} <br/>
+    Description : {!v.accRecord.Description}
+</aura:component>
