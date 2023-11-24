@@ -7,7 +7,7 @@ export default class Navigationservice extends NavigationMixin(LightningElement)
             type:'standard__objectPage',
             attributes:{
                 objectApiName:'Account',
-                actionName:'home',
+                actionName:'home'
             }
         })
     }

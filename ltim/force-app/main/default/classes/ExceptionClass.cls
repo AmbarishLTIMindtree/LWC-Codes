@@ -4,9 +4,9 @@ public class ExceptionClass {
         try{
             Integer result=a/b;
             System.debug(result);
-            Demo m;
+            ChildClass m;
             System.debug(m);
-           // m.sayHello();
+           	m.method2();
             List<String> name=new List<String>();
             name.add('amit');
             System.debug(name.get(5));
@@ -16,9 +16,6 @@ public class ExceptionClass {
             System.debug('Null Pointer Exception occured');
         }catch(Exception e){
             System.debug('Server is Busy');
-        }
-        finally{
-            System.debug('Thank You');
         }
     }
 

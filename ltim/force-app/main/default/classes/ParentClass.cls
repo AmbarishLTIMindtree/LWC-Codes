@@ -1,7 +1,7 @@
 public virtual class ParentClass {
     
-    public void dr(){
-        System.debug('Method in Parent Class');
+    public void method1(){
+        system.debug('Method in Parent Class');
     }
 
 }

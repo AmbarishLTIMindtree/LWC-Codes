@@ -1,6 +1,5 @@
 public class AccountTriggerClass {
-    
-    public static void insertAccountOwnership(List<Account> accounts){
+	public static void insertAccountOwnership(List<Account> accounts){
         for(Account account:accounts){
             if(account.Industry == 'Education'){
                 account.Ownership ='Public';
@@ -9,6 +8,4 @@ public class AccountTriggerClass {
         }
         
     }
-    
-
 }
