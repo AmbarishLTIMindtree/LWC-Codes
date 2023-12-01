@@ -1,0 +1,16 @@
+<apex:page standardController="Account">
+    <apex:form >
+        <apex:pageblock title="Edit Account" >
+            <apex:pageblockSection title="Account Info" columns="3" >
+                <apex:inputfield value="{!account.name}"/>
+                <apex:inputfield value="{!account.phone}" />
+                <apex:inputfield value="{!account.fax}"/>
+            </apex:pageblockSection>
+            <apex:pageblockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageblockButtons>
+        </apex:pageblock>
+    </apex:form>
+  
+</apex:page>

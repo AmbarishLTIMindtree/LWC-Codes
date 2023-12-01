@@ -1,0 +1,13 @@
+<apex:page controller="ContactClass1" >
+  <apex:form >
+      <apex:pageblock >
+          <apex:pageblockSection >
+              <apex:inputText value="{!newContact.FirstName}" label="First Name"/>
+              <apex:inputtext value="{!newContact.LastName}" label="Last Name"/>
+          </apex:pageblockSection>
+          <apex:pageblockbuttons >
+              <apex:commandButton value="Insert" action="{!insertRecord}"/>
+          </apex:pageblockbuttons>
+      </apex:pageblock>
+  </apex:form>
+</apex:page>

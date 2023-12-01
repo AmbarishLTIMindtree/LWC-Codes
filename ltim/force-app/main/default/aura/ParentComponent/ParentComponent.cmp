@@ -1,0 +1,6 @@
+<aura:component >
+    I am Parent Component---
+    <c:ChildComponent newText="See the Magic Ambi...I am from Parent Component"/>
+    
+    <aura:handler name="myEvent" event="c:MyEvent" action="{!c.handleEvent}" />
+</aura:component>

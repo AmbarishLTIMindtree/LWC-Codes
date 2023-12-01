@@ -1,0 +1,33 @@
+<aura:component controller="EmpInfo" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <aura:attribute type="String" name="heading" default="LTIMindtree Employee Registration Form" />
+	<aura:attribute type="String" name="employeeName" />
+    <aura:attribute type="String" name="employeeFatherName" />
+    <aura:attribute type="String" name="employeeAddress" />
+    <aura:attribute type="String" name="employeeDept" />
+    <aura:attribute type="String" name="employeeSalary" />
+    
+    <div class="slds-text-heading_large">
+        <div class="slds-text-align_center">
+    		{!v.heading}
+        </div>
+    </div>
+    
+    <div class="slds-align_absolute-center">
+        <div class="slds-size_3-of-8">
+            <lightning:input type="text" label="Enter Employee Name" value="{!v.employeeName}" />
+            <lightning:input type="text" label="Enter Employee Father Name" value="{!v.employeeFatherName}" />
+            <lightning:input type="text" label="Enter Employee Address" value="{!v.employeeAddress}" />
+            <lightning:input type="text" label="Enter Employee Dept" value="{!v.employeeDept}" />
+            <lightning:input type="text" label="Enter Employee Salary" value="{!v.employeeSalary}" />
+            
+		    <lightning:button label="Save" onclick="{!c.myAction}" name="empInfo" /> 
+            <lightning:button label="{!$Label.c.Save}" onclick="{!c.myAction}" name="empInfo" />
+        </div>
+        
+    </div>
+    {!$Browser.isTablet}
+    {!$Browser.isPhone}
+    {!$Browser.isAndroid}
+    {!$Browser.formFactor}
+</aura:component>

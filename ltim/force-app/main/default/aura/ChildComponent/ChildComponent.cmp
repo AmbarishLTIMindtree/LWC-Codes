@@ -1,0 +1,9 @@
+<aura:component >
+	I am from Child Component---
+    <aura:registerEvent name="myEvent" type="c:MyEvent" />
+    
+    <lightning:button name="My Button" label="Fire the Event--" onclick="{!c.fireEvent}" />
+    
+    <aura:attribute name="newText" type="String" />
+    {!v.newText}
+</aura:component>

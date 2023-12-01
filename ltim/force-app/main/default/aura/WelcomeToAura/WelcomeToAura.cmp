@@ -1,0 +1,20 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div>
+    	<p>Welcome to Aura Ambarish</p>
+    </div>
+    
+    <p>How to define a variable in Aura ?</p>
+   
+    <!-- To define variables -->
+    <aura:attribute type="String" name="userName" default="Ambi" />
+        
+    <div>User Name : {!v.userName}</div>
+    
+    
+    <!-- {!v.userName} is Expression -->
+    <lightning:input type="text" label="Enter Name" value="{!v.userName}" />
+    
+    <!-- If Image is not loaded we use input field -->
+     <img src="{!$Resource.NewResource}" style="width:100px" />
+    
+</aura:component>

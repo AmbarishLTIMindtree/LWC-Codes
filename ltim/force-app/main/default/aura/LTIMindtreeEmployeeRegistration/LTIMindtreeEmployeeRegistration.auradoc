@@ -1,0 +1,6 @@
+<aura:documentation>
+	<aura:description>This component is used to store the employee information.</aura:description>
+	<aura:example name="LTIM Component" ref="c:LTIMindtreeEmployeeRegistration" label="LTIM Component">
+		Stores Information
+	</aura:example>
+</aura:documentation>
