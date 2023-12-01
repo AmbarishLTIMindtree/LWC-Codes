@@ -11,8 +11,8 @@ export default class Parentcustomer extends LightningElement {
                 var custData={
                     id:element.Id,
                     name:element.Name,
-
-                    email:element.Email__c
+                    email:element.Email__c,
+                    status:element.Status__c
                 }
                 this.searchDetail.push(custData);
             });
