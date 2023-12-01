@@ -22,6 +22,6 @@ export default class Searchcustomer extends LightningElement {
         .then(result=>{this.dispatchEvent(new CustomEvent('getcustomerdetails',{detail:result}))
     })
         .catch(error=>{console.log(error)})
-        alert("I am ready to search for "+this.customerName);
+      //  alert("I am ready to search for "+this.customerName);
     }
 }
