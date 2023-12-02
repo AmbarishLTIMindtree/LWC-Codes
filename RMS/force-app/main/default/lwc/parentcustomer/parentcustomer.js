@@ -20,4 +20,8 @@ export default class Parentcustomer extends LightningElement {
             console.log(e);
         }
     }
+
+    handleClear () {
+        this.searchDetail = [];
+    }
 }
