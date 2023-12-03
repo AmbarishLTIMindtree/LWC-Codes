@@ -10,4 +10,6 @@ const columns = [
 export default class Customersearchresult extends LightningElement {
     columns = columns;
     @api searchresults=[];
+
+    //ambarish
 }
