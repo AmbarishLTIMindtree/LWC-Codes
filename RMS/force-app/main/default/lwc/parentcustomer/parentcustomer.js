@@ -9,7 +9,7 @@ export default class Parentcustomer extends LightningElement {
         try{
             event.detail.forEach(element => {
                 var custData={
-                    id:element.Id,
+                    id:element.Customer_Id__c,
                     name:element.Name,
                     email:element.Email__c,
                     status:element.Status__c
